@@ -8,7 +8,6 @@ public class FizzBuzz {
         if ((number % 3 == 0 || String.valueOf(number).contains("3")) && (number % 5 == 0 || String.valueOf(number).contains("5"))) {
             if (check(number) == true) {
                 return "fizz buzz deluxe";
-
             } else {
                 return "fizz buzz";
             }
@@ -28,19 +27,14 @@ public class FizzBuzz {
         int c1, c2;
         boolean equal = true;
         c1 = number % 10;
-        while (number >0) {
-            number = number / 10;
+        while (number != 0) {
             c2 = number % 10;
+            number = number / 10;
             if (c1 != c2) {
                 equal = false;
                 break;
             };
-
         }
-        if (equal == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return equal;
     }
 }
