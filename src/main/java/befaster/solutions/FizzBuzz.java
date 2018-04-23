@@ -15,7 +15,7 @@ public class FizzBuzz {
             return "fizz";
         } else if (number % 5 == 0 || String.valueOf(number).contains("5")) {
             return "buzz";
-        } else if (check(number) == true) {
+        } else if (check(number) == true && (number /10 !=0)) {
             return "deluxe";
         } else {
             return String.valueOf(number);
