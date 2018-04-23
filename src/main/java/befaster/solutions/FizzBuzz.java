@@ -12,10 +12,18 @@ public class FizzBuzz {
                 return "fizz buzz";
             }
         } else if (number % 3 == 0 || String.valueOf(number).contains("3")) {
-            return "fizz";
+            if (check(number) == true) {
+                return "fizz deluxe";
+            } else {
+                return "fizz";
+            }
         } else if (number % 5 == 0 || String.valueOf(number).contains("5")) {
-            return "buzz";
-        } else if (check(number) == true && (number /10 !=0)) {
+            if (check(number) == true) {
+                return "buzz deluxe";
+            } else {
+                return "buzz";
+            }
+        } else if (check(number) == true && (number / 10 != 0)) {
             return "deluxe";
         } else {
             return String.valueOf(number);
