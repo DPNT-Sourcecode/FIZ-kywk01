@@ -12,13 +12,13 @@ public class FizzBuzz {
                 return "fizz buzz";
             }
         } else if (number % 3 == 0 || String.valueOf(number).contains("3")) {
-            if (check(number) == true) {
+            if (check(number) == true && (number / 10 != 0)) {
                 return "fizz deluxe";
             } else {
                 return "fizz";
             }
         } else if (number % 5 == 0 || String.valueOf(number).contains("5")) {
-            if (check(number) == true) {
+            if (check(number) == true && (number / 10 != 0)) {
                 return "buzz deluxe";
             } else {
                 return "buzz";
