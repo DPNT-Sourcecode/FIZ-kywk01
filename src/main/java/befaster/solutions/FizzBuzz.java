@@ -28,7 +28,7 @@ public class FizzBuzz {
         int c1, c2;
         boolean equal = true;
         c1 = number % 10;
-        while (number != 0) {
+        while (number >0) {
             number = number / 10;
             c2 = number % 10;
             if (c1 != c2) {
