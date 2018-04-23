@@ -35,12 +35,12 @@ public class FizzBuzz {
                 equal = false;
                 break;
             };
-            if (equal == true) {
-                return true;
-            } else {
-                return false;
-            }
 
+        }
+        if (equal == true) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
