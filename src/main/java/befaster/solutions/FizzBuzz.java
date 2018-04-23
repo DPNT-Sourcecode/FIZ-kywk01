@@ -30,7 +30,7 @@ public class FizzBuzz {
             }
         } else {
             if ((number % 3 == 0 || String.valueOf(number).contains("3")) && (number % 5 == 0 || String.valueOf(number).contains("5"))) {
-                if ((number % 3 == 0 && String.valueOf(number).contains("3")) && (number % 5 == 0 && String.valueOf(number).contains("5"))) {
+                if (number % 3 == 0 && String.valueOf(number).contains("3")&& number % 5 == 0 && String.valueOf(number).contains("5")) {
                     return "fizz buzz deluxe";
                 } else {
                     return "fizz buzz";
